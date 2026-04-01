@@ -285,46 +285,116 @@ footer{background:#0f1e16;}
 .reveal.vis{opacity:1;transform:translateY(0);}
 .d1{transition-delay:.1s;}.d2{transition-delay:.2s;}.d3{transition-delay:.3s;}
 
-/* RESPONSIVE */
+/* ══ RESPONSIVE ══ */
 @media(max-width:1024px){
-  .hero-grid{grid-template-columns:1fr;gap:40px;}
-  .hqcard{max-width:520px;}
+  .hero-grid{grid-template-columns:1fr;gap:36px;}
+  .hqcard{max-width:100%;}
   .svc-grid{grid-template-columns:1fr;gap:4px;}
-  .svc-card:first-child{grid-column:auto;min-height:360px;}
-  .water-grid{grid-template-columns:1fr;gap:52px;}
-  .water-img-accent{right:-10px;bottom:-10px;}
+  .svc-card:first-child{grid-column:auto;min-height:340px;}
+  .water-grid{grid-template-columns:1fr;gap:48px;}
+  .water-img-accent{width:42%;right:-8px;bottom:-8px;}
   .about-grid{grid-template-columns:1fr;gap:60px;}
   .nursery-inner{grid-template-columns:1fr;}
   .nursery-right{min-height:280px;}
-  .contact-grid{grid-template-columns:1fr;gap:52px;}
+  .contact-grid{grid-template-columns:1fr;gap:48px;}
   .gallery-bento{grid-template-rows:220px 220px;}
   .footer-grid{grid-template-columns:1fr 1fr;gap:2rem;}
   .footer-grid>*:first-child{grid-column:1/-1;}
 }
 @media(max-width:768px){
+  /* Nav */
   .nav-links{display:none;}
   .hamburger{display:flex;}
   .nav-right .btn:first-of-type{display:none;}
-  .sec{padding:64px 0;}
-  .hero-inner{padding:96px 22px 70px;}
+  .nav-inner{padding:0 16px;}
+  /* Announce */
+  .announce span{font-size:.6rem;letter-spacing:.1em;}
+  /* Demo badge */
+  .demo-badge{font-size:.52rem;padding:6px 10px 6px 9px;top:60px;}
+  /* Sections */
+  .sec{padding:56px 0;}
+  .container{padding:0 18px;}
+  /* Hero */
+  .hero-inner{padding:88px 18px 56px;}
+  .hero-grid{grid-template-columns:1fr;gap:32px;}
+  .hero-title{font-size:clamp(2.6rem,11vw,3.8rem);}
+  .hero-location{font-size:.95rem;}
+  .hero-sub{font-size:.9rem;margin-bottom:24px;}
   .hero-actions{flex-direction:column;gap:10px;}
-  .hero-actions .btn{width:100%;justify-content:center;}
-  .htbar{width:100%;gap:10px;}
+  .hero-actions .btn{width:100% !important;justify-content:center;padding:14px 20px !important;font-size:.76rem !important;}
+  .htbar{width:100%;flex-direction:column;gap:8px;padding:14px 16px;}
   .htbar-div{display:none;}
+  .htbar-item{font-size:.68rem;}
+  /* Services */
+  .svc-grid{gap:3px;}
+  .svc-card{min-height:240px;}
+  .svc-card:first-child{min-height:260px;}
+  .svc-name{font-size:1.4rem;}
+  .svc-card:first-child .svc-name{font-size:1.9rem;}
+  .svc-desc{font-size:.8rem;}
+  .section-head{margin-bottom:40px;}
+  /* Water */
+  .water-inner{padding:60px 0;}
+  .water-title{font-size:clamp(2.6rem,10vw,3.8rem);}
+  .water-badge{position:static;display:inline-block;margin-bottom:16px;}
+  .water-img-main{aspect-ratio:16/9;}
+  .water-img-accent{display:none;}
+  .water-features{grid-template-columns:1fr 1fr;gap:8px;}
+  /* About */
+  .about-img-wrap{padding-bottom:24px;}
+  .about-img-frame{aspect-ratio:4/3;}
+  .about-year-badge{right:0;bottom:-16px;}
+  .about-title{font-size:clamp(2.2rem,9vw,3rem);}
+  .about-stats{grid-template-columns:repeat(3,1fr);}
+  .stat{padding:14px 6px;}
+  .stat-num{font-size:2rem;}
+  .services-list{gap:6px;}
+  .svc-pill{font-size:.6rem;padding:6px 10px;}
+  /* Gallery */
   .gallery-bento{grid-template-columns:1fr 1fr;grid-template-rows:auto;gap:3px;}
-  .gal-item:nth-child(1){grid-column:auto;grid-row:auto;aspect-ratio:1;}
+  .gal-item:nth-child(1){grid-column:span 2;grid-row:auto;aspect-ratio:16/9;}
   .gal-item:nth-child(4){grid-column:auto;aspect-ratio:1;}
   .gal-item{aspect-ratio:1;}
-  .about-stats{grid-template-columns:1fr;}
-  .stat{border-right:none;border-bottom:1px solid var(--mid);}
+  /* Nursery */
+  .nursery-left{padding:36px 20px;}
+  .nursery-title{font-size:clamp(2rem,8vw,2.8rem);}
+  .nursery-right{min-height:220px;}
+  .nursery-btns{flex-direction:column;gap:10px;}
+  .nursery-btns .btn{width:100%;justify-content:center;}
+  /* Contact */
+  .contact-title{font-size:clamp(2.2rem,9vw,3rem);}
+  .ci-row{padding:12px 14px;gap:12px;}
   .row2{grid-template-columns:1fr;}
+  .cform-body{padding:18px 16px;}
+  .hqcard-body{padding:16px 18px;}
+  .hqcard-head{padding:16px 18px;}
+  /* Footer CTA */
+  .footer-cta-inner{flex-direction:column;align-items:flex-start;gap:16px;}
+  .footer-cta-btns{width:100%;flex-direction:column;gap:10px;}
+  .footer-cta-btns .btn{width:100%;justify-content:center;}
+  /* Footer */
   .footer-grid{grid-template-columns:1fr;}
   .footer-grid>*:first-child{grid-column:auto;}
-  .footer-cta-inner{flex-direction:column;align-items:flex-start;}
-  .footer-cta-btns{width:100%;}
-  .footer-cta-btns .btn{flex:1;justify-content:center;}
-  .nursery-left{padding:40px 28px;}
-  .water-badge{position:static;margin-bottom:20px;display:inline-block;}
+  .footer-bottom{flex-direction:column;align-items:flex-start;gap:8px;}
+  /* Float CTA */
+  .float-cta{bottom:16px;right:16px;}
+  .float-cta .btn{padding:12px 18px;font-size:.68rem;}
+}
+@media(max-width:480px){
+  .hero-title{font-size:2.4rem;}
+  .announce span{font-size:.52rem;letter-spacing:.06em;}
+  .about-stats{grid-template-columns:1fr;}
+  .stat{border-right:none;border-bottom:1px solid var(--mid);}
+  .stat:last-child{border-bottom:none;}
+  .gallery-bento{grid-template-columns:1fr;}
+  .gal-item:nth-child(1){grid-column:auto;aspect-ratio:4/3;}
+  .gal-item{aspect-ratio:4/3;}
+  .water-features{grid-template-columns:1fr;}
+  .sec-title{font-size:2rem;}
+  .contact-title{font-size:2rem;}
+  .about-title{font-size:2rem;}
+  .nursery-title{font-size:1.9rem;}
+  .demo-badge{font-size:.48rem;top:56px;}
 }
 </style>
 </head>
@@ -702,7 +772,7 @@ footer{background:#0f1e16;}
           </div>
           <div class="ci-row">
             <div class="ci-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
-            <div><div class="ci-label">Email</div><div class="ci-val"><a href="mailto:doug.starz@yahoo.com">doug.starz@yahoo.com</a></div></div>
+            <div><div class="ci-label">Email</div><div class="ci-val"><a href="/cdn-cgi/l/email-protection#573338223079242336252d172e363f38387934383a"><span class="__cf_email__" data-cfemail="3e5a514b59104d4a5f4c447e475f565151105d5153">[email&#160;protected]</span></a></div></div>
           </div>
           <div class="ci-row">
             <div class="ci-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
@@ -824,7 +894,7 @@ footer{background:#0f1e16;}
           <div class="footer-col-title">Contact</div>
           <ul class="footer-contact-list">
             <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.37a16 16 0 0 0 5.72 5.72l1.37-1.37a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+14065794607">(406) 579-4607</a></li>
-            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:doug.starz@yahoo.com">doug.starz@yahoo.com</a></li>
+            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="/cdn-cgi/l/email-protection#462229332168353227343c063f272e29296825292b"><span class="__cf_email__" data-cfemail="395d564c5e174a4d584b43794058515656175a5654">[email&#160;protected]</span></a></li>
             <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>47650 Gallatin Rd, Big Sky, MT 59716</span></li>
           </ul>
         </div>
@@ -837,7 +907,7 @@ footer{background:#0f1e16;}
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const nav=document.getElementById('mainNav');
 const hero=document.getElementById('hero');
 const floatCta=document.getElementById('floatCta');
@@ -864,15 +934,4 @@ function handleForm(e,form,successId){
   const btn=form.querySelector('button[type="submit"]');
   const orig=btn.innerHTML;
   btn.innerHTML='Sending...';btn.disabled=true;
-  setTimeout(()=>{
-    btn.innerHTML='&#10003; Sent! We\'ll be in touch same day.';
-    btn.style.background='var(--green-dk)';
-    const s=document.getElementById(successId);
-    if(s)s.style.display='block';
-    form.reset();
-    setTimeout(()=>{btn.innerHTML=orig;btn.style.background='';btn.disabled=false;if(s)s.style.display='none';},5000);
-  },1100);
-}
-</script>
-</body>
-</html>
+  se
