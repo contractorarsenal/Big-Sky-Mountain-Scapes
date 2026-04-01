@@ -6,395 +6,333 @@
 <title>Big Sky Mountain Scapes | Landscaping & Water Features | Big Sky, MT</title>
 <meta name="description" content="Full service landscaping, water features, and design in Big Sky, Montana. Founded 1992. Waterfalls, patios, fire pits, tree nursery. Call Doug at (406) 579-4607."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 :root{
-  --green:#286658;
-  --green-dk:#1e4d42;
-  --green-lt:#3a8070;
-  --green-pale:#e8f3f0;
-  --amber:#b8863c;
-  --amber-lt:#d4a055;
-  --gold:#f0c870;
-  --white:#ffffff;
-  --off-white:#f8f6f2;
-  --light:#f2f0eb;
-  --mid:#dedad2;
-  --ink:#1a1a18;
-  --text:#3a3830;
-  --muted:#6a6858;
-  --tr:.22s ease;
+  --green:#286658;--green-dk:#1e4d42;--green-pale:#e8f3f0;
+  --amber:#b8863c;--gold:#f0c870;
+  --white:#fff;--off:#f8f6f2;--light:#f2f0eb;--mid:#dedad2;
+  --ink:#1a1a18;--text:#3a3830;--muted:#6a6858;--tr:.2s ease;
 }
 html{scroll-behavior:smooth;}
 body{font-family:'DM Sans',sans-serif;background:var(--white);color:var(--text);overflow-x:hidden;line-height:1.6;}
 a{text-decoration:none;color:inherit;}
 img{display:block;max-width:100%;height:auto;}
-.container{width:100%;max-width:1240px;margin:0 auto;padding:0 28px;}
-.label{font-family:'Syne',sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--amber);display:inline-flex;align-items:center;gap:10px;}
-.label::before{content:'';width:22px;height:1px;background:var(--amber);}
+.container{width:100%;max-width:1200px;margin:0 auto;padding:0 20px;}
 
-/* BUTTONS */
-.btn{display:inline-flex;align-items:center;gap:9px;font-family:'Syne',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:14px 28px;cursor:pointer;transition:all var(--tr);white-space:nowrap;border:none;}
+/* ---- BUTTONS ---- */
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:'Syne',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;padding:13px 24px;cursor:pointer;transition:all var(--tr);white-space:nowrap;border:none;text-decoration:none;}
 .btn-green{background:var(--green);color:#fff;}
-.btn-green:hover{background:var(--green-dk);transform:translateY(-2px);box-shadow:0 10px 30px rgba(40,102,88,.35);}
+.btn-green:hover{background:var(--green-dk);}
 .btn-amber{background:var(--amber);color:#fff;}
-.btn-amber:hover{background:var(--amber-lt);transform:translateY(-2px);box-shadow:0 10px 30px rgba(184,134,60,.35);}
+.btn-amber:hover{background:#c9973f;}
 .btn-outline{background:transparent;border:2px solid var(--green);color:var(--green);}
-.btn-outline:hover{background:var(--green);color:#fff;transform:translateY(-2px);}
-.btn-outline-white{background:transparent;border:2px solid rgba(255,255,255,.7);color:#fff;}
-.btn-outline-white:hover{background:rgba(255,255,255,.15);border-color:#fff;transform:translateY(-2px);}
+.btn-outline:hover{background:var(--green);color:#fff;}
+.btn-outline-w{background:transparent;border:2px solid rgba(255,255,255,.7);color:#fff;}
+.btn-outline-w:hover{background:rgba(255,255,255,.15);}
 .btn-white{background:#fff;color:var(--green);}
-.btn-white:hover{background:var(--off-white);transform:translateY(-2px);}
+.btn-white:hover{background:var(--off);}
+.btn-full{width:100%;justify-content:center;}
 
-/* DEMO BADGE */
-.demo-badge{position:fixed;top:68px;right:0;z-index:9000;background:#e0190f;color:#fff;font-family:'Syne',sans-serif;font-size:.6rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;padding:7px 16px 7px 12px;clip-path:polygon(8px 0,100% 0,100% 100%,0 100%);box-shadow:-4px 4px 20px rgba(224,25,15,.5);}
+/* ---- DEMO BADGE ---- */
+.demo-badge{position:fixed;top:68px;right:0;z-index:9999;background:#e01010;color:#fff;font-family:'Syne',sans-serif;font-size:.58rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;padding:7px 14px 7px 10px;clip-path:polygon(8px 0,100% 0,100% 100%,0 100%);box-shadow:-3px 3px 16px rgba(224,16,16,.5);}
 
-/* ANNOUNCE */
-.announce{background:var(--green);padding:10px 0;text-align:center;}
-.announce span{font-family:'Syne',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#fff;}
+/* ---- ANNOUNCE ---- */
+.announce{background:var(--green);padding:9px 20px;text-align:center;}
+.announce p{font-family:'Syne',sans-serif;font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#fff;margin:0;}
 
-/* NAV */
-nav{position:sticky;top:0;z-index:200;background:#fff;border-bottom:3px solid var(--green);box-shadow:0 2px 16px rgba(0,0,0,.08);}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px;padding:0 28px;max-width:1240px;margin:0 auto;}
-.nav-logo img{height:46px;width:auto;}
-.nav-links{display:flex;gap:2rem;list-style:none;}
-.nav-links a{font-family:'Syne',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--text);transition:color var(--tr);}
+/* ---- NAV ---- */
+nav{position:sticky;top:0;z-index:200;background:#fff;border-bottom:3px solid var(--green);box-shadow:0 2px 12px rgba(0,0,0,.08);}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:66px;padding:0 20px;max-width:1200px;margin:0 auto;}
+.nav-logo img{height:42px;width:auto;}
+.nav-links{display:flex;gap:1.8rem;list-style:none;}
+.nav-links a{font-family:'Syne',sans-serif;font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--text);}
 .nav-links a:hover{color:var(--green);}
-.nav-right{display:flex;align-items:center;gap:10px;}
-.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px;}
+.nav-right{display:flex;align-items:center;gap:8px;}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px;}
 .hamburger span{display:block;width:22px;height:2px;background:var(--ink);border-radius:2px;transition:var(--tr);}
 
-/* DRAWER */
-.drawer{display:none;position:fixed;inset:0;background:#fff;z-index:300;flex-direction:column;align-items:center;justify-content:center;gap:1.8rem;}
+/* ---- DRAWER ---- */
+.drawer{display:none;position:fixed;inset:0;background:#fff;z-index:300;flex-direction:column;align-items:center;justify-content:center;gap:1.6rem;}
 .drawer.open{display:flex;}
-.drawer-close{position:absolute;top:22px;right:24px;background:none;border:none;color:var(--muted);font-size:2.2rem;cursor:pointer;line-height:1;}
-.drawer-close:hover{color:var(--ink);}
-.drawer-logo img{height:52px;width:auto;margin-bottom:.5rem;}
-.drawer a{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;letter-spacing:.1em;color:var(--ink);transition:color var(--tr);}
+.drawer-close{position:absolute;top:20px;right:20px;background:none;border:none;font-size:2rem;cursor:pointer;color:var(--muted);line-height:1;}
+.drawer-logo img{height:48px;width:auto;margin-bottom:.4rem;}
+.drawer a{font-family:'Bebas Neue',sans-serif;font-size:2.6rem;letter-spacing:.1em;color:var(--ink);}
 .drawer a:hover{color:var(--green);}
 
-/* HERO */
-#hero{position:relative;min-height:100svh;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:var(--green-dk);}
-.hero-bg{position:absolute;inset:0;z-index:0;}
+/* ---- HERO ---- */
+#hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden;background:var(--green-dk);}
+.hero-bg{position:absolute;inset:0;}
 .hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 35%;}
-.hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(160deg,rgba(15,35,25,.95) 0%,rgba(15,35,25,.78) 50%,rgba(15,35,25,.42) 100%);}
-.hero-mountains{position:absolute;bottom:-2px;left:0;right:0;z-index:2;pointer-events:none;}
-.hero-inner{position:relative;z-index:3;width:100%;padding:120px 28px 100px;max-width:1240px;margin:0 auto;}
-.hero-grid{display:grid;grid-template-columns:1fr 390px;gap:60px;align-items:center;}
-.hero-eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:18px;}
-.hero-line{width:40px;height:2px;background:var(--gold);}
-.hero-eyebrow-text{font-family:'Syne',sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);}
-.hero-title{font-family:'Bebas Neue',sans-serif;line-height:.9;letter-spacing:.04em;text-transform:uppercase;font-size:clamp(3rem,8vw,9rem);color:#fff;margin-bottom:8px;}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(160deg,rgba(12,30,22,.94) 0%,rgba(12,30,22,.76) 50%,rgba(12,30,22,.4) 100%);}
+.hero-inner{position:relative;z-index:2;width:100%;padding:110px 20px 90px;max-width:1200px;margin:0 auto;}
+.hero-grid{display:grid;grid-template-columns:1fr 380px;gap:52px;align-items:center;}
+.hero-eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:16px;}
+.hero-line{width:36px;height:2px;background:var(--gold);}
+.hero-eyebrow span{font-family:'Syne',sans-serif;font-size:.62rem;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);}
+.hero-title{font-family:'Bebas Neue',sans-serif;line-height:.92;letter-spacing:.04em;text-transform:uppercase;font-size:clamp(3rem,8vw,8rem);color:#fff;margin-bottom:6px;}
 .hero-title .ac{color:#7dd4b8;}
 .hero-title .ag{color:var(--gold);}
-.hero-location{font-family:'Cormorant Garamond',serif;font-size:clamp(1.1rem,2vw,1.4rem);font-style:italic;color:rgba(255,255,255,.65);margin-bottom:22px;}
-.hero-sub{font-size:.98rem;font-weight:300;color:rgba(255,255,255,.78);max-width:460px;line-height:1.85;margin-bottom:36px;}
-.hero-actions{display:flex;gap:12px;flex-wrap:wrap;}
-.htbar{display:flex;align-items:center;gap:16px;margin-top:36px;padding:14px 22px;background:rgba(255,255,255,.12);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.2);width:fit-content;flex-wrap:wrap;}
-.htbar-item{display:flex;align-items:center;gap:7px;font-family:'Syne',sans-serif;font-size:.7rem;font-weight:600;letter-spacing:.08em;color:#fff;white-space:nowrap;}
-.htbar-div{width:1px;height:16px;background:rgba(255,255,255,.3);flex-shrink:0;}
+.hero-loc{font-size:1rem;font-style:italic;color:rgba(255,255,255,.6);margin-bottom:18px;}
+.hero-sub{font-size:.96rem;font-weight:300;color:rgba(255,255,255,.78);max-width:440px;line-height:1.8;margin-bottom:30px;}
+.hero-btns{display:flex;gap:10px;flex-wrap:wrap;}
+.htbar{display:flex;align-items:center;gap:14px;margin-top:28px;padding:12px 18px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);flex-wrap:wrap;}
+.htbar-item{display:flex;align-items:center;gap:6px;font-family:'Syne',sans-serif;font-size:.68rem;font-weight:600;letter-spacing:.06em;color:#fff;white-space:nowrap;}
+.htbar-div{width:1px;height:14px;background:rgba(255,255,255,.3);flex-shrink:0;}
+.hero-mountains{position:absolute;bottom:-2px;left:0;right:0;z-index:3;pointer-events:none;}
 
-/* QUOTE CARD */
-.hqcard{background:#fff;border:1px solid var(--mid);border-top:4px solid var(--green);box-shadow:0 24px 64px rgba(0,0,0,.22);}
-.hqcard-head{background:var(--green);padding:22px 26px;}
-.hqcard-head h3{font-family:'Syne',sans-serif;font-size:.9rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:#fff;margin-bottom:4px;}
-.hqcard-head p{font-size:.78rem;color:rgba(255,255,255,.65);}
-.hqcard-body{padding:22px 26px;background:#fff;}
-.fg{display:flex;flex-direction:column;gap:4px;margin-bottom:11px;}
-.fg label{font-family:'Syne',sans-serif;font-size:.58rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);}
-.fg input,.fg select{background:var(--off-white);border:1.5px solid var(--mid);padding:11px 14px;color:var(--ink);font-family:'DM Sans',sans-serif;font-size:.9rem;width:100%;outline:none;transition:border-color var(--tr);-webkit-appearance:none;}
+/* ---- QUOTE CARD ---- */
+.hqcard{background:#fff;border-top:4px solid var(--green);box-shadow:0 20px 60px rgba(0,0,0,.22);}
+.hqcard-head{background:var(--green);padding:20px 22px;}
+.hqcard-head h3{font-family:'Syne',sans-serif;font-size:.86rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:#fff;margin-bottom:3px;}
+.hqcard-head p{font-size:.76rem;color:rgba(255,255,255,.62);}
+.hqcard-body{padding:20px 22px;background:#fff;}
+.fg{display:flex;flex-direction:column;gap:3px;margin-bottom:10px;}
+.fg label{font-family:'Syne',sans-serif;font-size:.56rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);}
+.fg input,.fg select{background:var(--off);border:1.5px solid var(--mid);padding:10px 13px;color:var(--ink);font-family:'DM Sans',sans-serif;font-size:.88rem;width:100%;outline:none;-webkit-appearance:none;}
 .fg input:focus,.fg select:focus{border-color:var(--green);}
-.fg select option{background:#fff;color:var(--ink);}
-.hqcard-body .btn{width:100%;justify-content:center;margin-top:6px;font-size:.76rem;}
-.hqcard-note{text-align:center;margin-top:8px;font-size:.64rem;color:var(--muted);}
+.fg select option{background:#fff;}
+.hqcard-note{text-align:center;margin-top:7px;font-size:.62rem;color:var(--muted);}
 
-/* MARQUEE */
-.marquee-wrap{background:var(--green);overflow:hidden;padding:11px 0;}
+/* ---- MARQUEE ---- */
+.marquee-wrap{background:var(--green);overflow:hidden;padding:10px 0;}
 .marquee-track{display:flex;width:max-content;animation:marquee 32s linear infinite;}
 @keyframes marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
-.marquee-item{display:inline-flex;align-items:center;gap:14px;padding:0 24px;white-space:nowrap;}
-.marquee-text{font-family:'Bebas Neue',sans-serif;font-size:.82rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.85);}
-.marquee-dot{width:5px;height:5px;border-radius:50%;background:var(--gold);display:inline-block;}
+.marquee-item{display:inline-flex;align-items:center;gap:12px;padding:0 22px;white-space:nowrap;}
+.marquee-text{font-family:'Bebas Neue',sans-serif;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.85);}
+.marquee-dot{width:4px;height:4px;border-radius:50%;background:var(--gold);display:inline-block;}
 
-/* SECTIONS */
-.sec{padding:96px 0;}
+/* ---- SECTION COMMONS ---- */
+.sec{padding:88px 0;}
 .sec-white{background:#fff;}
 .sec-light{background:var(--light);}
-
-.section-head{text-align:center;margin-bottom:60px;}
-.section-head .label{justify-content:center;margin-bottom:14px;}
-.section-head .label::before{display:none;}
-.sec-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.6rem,5.5vw,5rem);line-height:.92;letter-spacing:.03em;text-transform:uppercase;color:var(--ink);}
+.section-head{text-align:center;margin-bottom:52px;}
+.lbl{font-family:'Syne',sans-serif;font-size:.63rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--amber);display:block;margin-bottom:10px;}
+.sec-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.4rem,5vw,4.6rem);line-height:.92;letter-spacing:.03em;text-transform:uppercase;color:var(--ink);}
 .sec-title .ac{color:var(--green);}
 .sec-title .ag{color:var(--amber);}
-.sec-sub{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:300;color:var(--muted);line-height:1.8;max-width:520px;margin:14px auto 0;}
+.sec-sub{font-size:1rem;font-weight:300;color:var(--muted);line-height:1.75;max-width:500px;margin:12px auto 0;}
 
-/* SERVICES */
+/* ---- SERVICES ---- */
 .svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:4px;background:var(--mid);}
-.svc-card{position:relative;overflow:hidden;cursor:default;min-height:320px;display:flex;flex-direction:column;justify-content:flex-end;background:var(--green-dk);}
-.svc-card:first-child{grid-column:span 2;min-height:400px;}
-.svc-img{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .7s cubic-bezier(.22,.61,.36,1);}
-.svc-card:hover .svc-img{transform:scale(1.06);}
-.svc-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(15,35,25,.95) 0%,rgba(15,35,25,.45) 65%,transparent 100%);}
-.svc-tag{position:absolute;top:18px;left:18px;z-index:3;background:var(--amber);color:#fff;font-family:'Syne',sans-serif;font-size:.56rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;padding:5px 12px;}
-.svc-content{position:relative;z-index:2;padding:28px;}
-.svc-num{font-family:'Bebas Neue',sans-serif;font-size:.8rem;letter-spacing:.3em;color:var(--gold);margin-bottom:6px;opacity:.7;}
-.svc-name{font-family:'Bebas Neue',sans-serif;font-size:1.9rem;letter-spacing:.05em;text-transform:uppercase;color:#fff;margin-bottom:8px;}
-.svc-card:first-child .svc-name{font-size:3rem;}
-.svc-desc{font-size:.84rem;font-weight:300;color:rgba(255,255,255,.75);line-height:1.65;margin-bottom:14px;max-width:400px;}
-.svc-link{display:inline-flex;align-items:center;gap:6px;font-family:'Syne',sans-serif;font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);transition:gap var(--tr);}
-.svc-link:hover{gap:11px;}
+.svc-card{position:relative;overflow:hidden;min-height:300px;display:flex;flex-direction:column;justify-content:flex-end;background:var(--green-dk);}
+.svc-card:first-child{grid-column:span 2;min-height:380px;}
+.svc-img{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .6s ease;}
+.svc-card:hover .svc-img{transform:scale(1.05);}
+.svc-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(12,30,22,.95) 0%,rgba(12,30,22,.4) 65%,transparent 100%);}
+.svc-tag{position:absolute;top:16px;left:16px;z-index:3;background:var(--amber);color:#fff;font-family:'Syne',sans-serif;font-size:.54rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;padding:4px 10px;}
+.svc-content{position:relative;z-index:2;padding:24px;}
+.svc-num{font-family:'Bebas Neue',sans-serif;font-size:.76rem;letter-spacing:.28em;color:var(--gold);margin-bottom:4px;opacity:.7;}
+.svc-name{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:.04em;text-transform:uppercase;color:#fff;margin-bottom:6px;}
+.svc-card:first-child .svc-name{font-size:2.6rem;}
+.svc-desc{font-size:.82rem;font-weight:300;color:rgba(255,255,255,.72);line-height:1.6;margin-bottom:12px;}
+.svc-link{display:inline-flex;align-items:center;gap:5px;font-family:'Syne',sans-serif;font-size:.64rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);}
 
-/* WATER FEATURES */
-#water{position:relative;overflow:hidden;min-height:600px;}
-.water-bg{position:absolute;inset:0;z-index:0;}
+/* ---- WATER FEATURES ---- */
+#water{position:relative;overflow:hidden;min-height:560px;}
+.water-bg{position:absolute;inset:0;}
 .water-bg img{width:100%;height:100%;object-fit:cover;}
-.water-bg-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(135deg,rgba(15,35,25,.97) 0%,rgba(15,35,25,.85) 50%,rgba(15,35,25,.55) 100%);}
-.water-inner{position:relative;z-index:2;padding:100px 0;}
-.water-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
-.water-left .label{color:var(--gold);margin-bottom:16px;}
-.water-left .label::before{background:var(--gold);}
-.water-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,6vw,6.5rem);line-height:.88;letter-spacing:.03em;text-transform:uppercase;color:#fff;margin-bottom:22px;}
+.water-bg-ov{position:absolute;inset:0;background:linear-gradient(135deg,rgba(12,30,22,.97) 0%,rgba(12,30,22,.85) 50%,rgba(12,30,22,.55) 100%);}
+.water-inner{position:relative;z-index:2;padding:88px 0;}
+.water-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;}
+.water-lbl{font-family:'Syne',sans-serif;font-size:.63rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:12px;}
+.water-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.8rem,6vw,6rem);line-height:.9;letter-spacing:.03em;text-transform:uppercase;color:#fff;margin-bottom:18px;}
 .water-title .ac{color:#7dd4b8;}
-.water-body{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:300;color:rgba(255,255,255,.72);line-height:1.85;margin-bottom:28px;font-style:italic;}
-.water-features{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:32px;}
-.wf-item{display:flex;align-items:center;gap:10px;padding:12px 16px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);}
-.wf-dot{width:6px;height:6px;border-radius:50%;background:#7dd4b8;flex-shrink:0;}
-.wf-label{font-family:'Syne',sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.82);}
+.water-body{font-size:1rem;font-weight:300;color:rgba(255,255,255,.72);line-height:1.8;margin-bottom:24px;font-style:italic;}
+.water-feats{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:28px;}
+.wf{display:flex;align-items:center;gap:8px;padding:10px 14px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);}
+.wf-dot{width:5px;height:5px;border-radius:50%;background:#7dd4b8;flex-shrink:0;}
+.wf span{font-family:'Syne',sans-serif;font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.82);}
 .water-right{position:relative;}
-.water-img-main{aspect-ratio:4/5;overflow:hidden;border:3px solid rgba(255,255,255,.18);}
-.water-img-main img{width:100%;height:100%;object-fit:cover;}
-.water-img-accent{position:absolute;bottom:-28px;right:-28px;width:55%;aspect-ratio:4/3;overflow:hidden;border:4px solid #fff;box-shadow:0 20px 60px rgba(0,0,0,.5);}
-.water-img-accent img{width:100%;height:100%;object-fit:cover;}
-.water-badge{position:absolute;top:24px;left:-24px;background:var(--amber);color:#fff;padding:18px 20px;text-align:center;box-shadow:0 12px 40px rgba(184,134,60,.4);}
-.water-badge-num{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;line-height:1;display:block;}
-.water-badge-sub{font-family:'Syne',sans-serif;font-size:.55rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;opacity:.75;}
+.water-badge{background:var(--amber);color:#fff;padding:16px 18px;text-align:center;display:inline-block;margin-bottom:16px;}
+.water-badge-num{font-family:'Bebas Neue',sans-serif;font-size:2.6rem;line-height:1;display:block;}
+.water-badge-sub{font-family:'Syne',sans-serif;font-size:.52rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;opacity:.75;}
+.water-img-main{overflow:hidden;border:3px solid rgba(255,255,255,.16);}
+.water-img-main img{width:100%;height:320px;object-fit:cover;display:block;}
+.water-img-accent{margin-top:4px;overflow:hidden;}
+.water-img-accent img{width:100%;height:180px;object-fit:cover;display:block;}
 
-/* ABOUT */
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
-.about-img-wrap{position:relative;}
-.about-img-frame{aspect-ratio:3/4;overflow:hidden;border:3px solid var(--mid);}
-.about-img-frame img{width:100%;height:100%;object-fit:cover;object-position:center top;}
-.about-year-badge{position:absolute;bottom:-20px;right:-20px;background:var(--green);color:#fff;padding:20px 24px;text-align:center;box-shadow:0 16px 48px rgba(40,102,88,.3);}
-.about-year{font-family:'Bebas Neue',sans-serif;font-size:3rem;line-height:1;display:block;}
-.about-year-sub{font-family:'Syne',sans-serif;font-size:.55rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;opacity:.7;}
-.about-content .label{margin-bottom:16px;}
-.about-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.4rem,4.5vw,4.8rem);line-height:.92;letter-spacing:.03em;text-transform:uppercase;color:var(--ink);margin-bottom:22px;}
+/* ---- ABOUT ---- */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start;}
+.about-img-wrap{position:relative;padding-bottom:20px;}
+.about-img-frame{overflow:hidden;}
+.about-img-frame img{width:100%;height:480px;object-fit:cover;object-position:center top;display:block;}
+.about-yr{position:absolute;bottom:0;right:0;background:var(--green);color:#fff;padding:18px 20px;text-align:center;}
+.about-yr span{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;line-height:1;display:block;}
+.about-yr small{font-family:'Syne',sans-serif;font-size:.52rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;opacity:.7;}
+.about-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.2rem,4.5vw,4.4rem);line-height:.92;letter-spacing:.03em;text-transform:uppercase;color:var(--ink);margin-bottom:18px;}
 .about-title .ac{color:var(--green);}
 .about-title .ag{color:var(--amber);}
-.about-body{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;font-weight:300;color:var(--muted);line-height:1.9;margin-bottom:16px;}
-.about-stats{display:grid;grid-template-columns:repeat(3,1fr);margin:32px 0;border-top:2px solid var(--green-pale);border-bottom:2px solid var(--green-pale);}
-.stat{text-align:center;padding:22px 12px;border-right:1px solid var(--mid);}
+.about-body{font-size:.96rem;font-weight:300;color:var(--muted);line-height:1.8;margin-bottom:12px;}
+.stats-row{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--green-pale);border-bottom:2px solid var(--green-pale);margin:24px 0;}
+.stat{text-align:center;padding:18px 8px;border-right:1px solid var(--mid);}
 .stat:last-child{border-right:none;}
-.stat-num{font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--green);line-height:1;display:block;}
-.stat-label{font-family:'Syne',sans-serif;font-size:.6rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:4px;}
-.services-list{display:flex;flex-wrap:wrap;gap:8px;}
-.svc-pill{font-family:'Syne',sans-serif;font-size:.64rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:7px 14px;border:1.5px solid var(--mid);color:var(--muted);transition:all var(--tr);}
-.svc-pill:hover{border-color:var(--green);color:var(--green);background:var(--green-pale);}
+.stat-num{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;color:var(--green);line-height:1;display:block;}
+.stat-lbl{font-family:'Syne',sans-serif;font-size:.58rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:4px;}
+.pills{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:24px;}
+.pill{font-family:'Syne',sans-serif;font-size:.62rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:6px 12px;border:1.5px solid var(--mid);color:var(--muted);}
+.pill:hover{border-color:var(--green);color:var(--green);background:var(--green-pale);}
 
-/* GALLERY */
-.gallery-bento{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:270px 270px;gap:4px;margin-top:60px;background:var(--mid);}
-.gal-item{overflow:hidden;position:relative;cursor:pointer;background:var(--green-pale);}
+/* ---- GALLERY ---- */
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:260px 260px;gap:4px;background:var(--mid);margin-top:52px;}
+.gal-item{overflow:hidden;position:relative;background:var(--green-pale);}
 .gal-item:nth-child(1){grid-column:span 2;grid-row:span 2;}
 .gal-item:nth-child(4){grid-column:span 2;}
-.gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.22,.61,.36,1);}
+.gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;}
 .gal-item:hover img{transform:scale(1.07);}
-.gal-overlay{position:absolute;inset:0;background:rgba(15,35,25,0);display:flex;align-items:flex-end;padding:18px;transition:background .3s;}
-.gal-item:hover .gal-overlay{background:rgba(15,35,25,.5);}
-.gal-label{font-family:'Syne',sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);opacity:0;transform:translateY(6px);transition:all .3s;}
-.gal-item:hover .gal-label{opacity:1;transform:translateY(0);}
+.gal-ov{position:absolute;inset:0;background:rgba(12,30,22,0);display:flex;align-items:flex-end;padding:14px;transition:background .3s;}
+.gal-item:hover .gal-ov{background:rgba(12,30,22,.5);}
+.gal-lbl{font-family:'Syne',sans-serif;font-size:.62rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);opacity:0;transform:translateY(5px);transition:all .3s;}
+.gal-item:hover .gal-lbl{opacity:1;transform:translateY(0);}
 
-/* NURSERY */
-.nursery-inner{background:var(--green);display:grid;grid-template-columns:1fr 1fr;overflow:hidden;}
-.nursery-left{padding:64px 56px;color:#fff;}
-.nursery-left .label{color:var(--gold);margin-bottom:16px;}
-.nursery-left .label::before{background:var(--gold);}
-.nursery-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.4rem,4vw,4.5rem);line-height:.92;letter-spacing:.03em;text-transform:uppercase;color:#fff;margin-bottom:18px;}
+/* ---- NURSERY ---- */
+.nursery-wrap{background:var(--green);display:grid;grid-template-columns:1fr 1fr;overflow:hidden;}
+.nursery-left{padding:60px 48px;color:#fff;}
+.nursery-lbl{font-family:'Syne',sans-serif;font-size:.63rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:12px;}
+.nursery-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.2rem,4vw,4rem);line-height:.92;letter-spacing:.03em;text-transform:uppercase;color:#fff;margin-bottom:16px;}
 .nursery-title .ag{color:var(--gold);}
-.nursery-body{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;font-style:italic;color:rgba(255,255,255,.75);line-height:1.9;margin-bottom:28px;}
-.nursery-btns{display:flex;gap:12px;flex-wrap:wrap;}
-.nursery-address{font-family:'Syne',sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.5);display:flex;align-items:center;gap:8px;margin-top:18px;}
-.nursery-right{min-height:380px;overflow:hidden;}
+.nursery-body{font-size:.96rem;font-weight:300;color:rgba(255,255,255,.74);line-height:1.8;margin-bottom:24px;font-style:italic;}
+.nursery-addr{font-family:'Syne',sans-serif;font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-top:14px;display:flex;align-items:center;gap:6px;}
+.nursery-btns{display:flex;gap:10px;flex-wrap:wrap;}
+.nursery-right{min-height:360px;overflow:hidden;}
 .nursery-right img{width:100%;height:100%;object-fit:cover;display:block;}
 
-/* CONTACT */
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
-.contact-left .label{margin-bottom:16px;}
-.contact-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.6rem,5vw,5rem);line-height:.92;letter-spacing:.03em;text-transform:uppercase;color:var(--ink);margin-bottom:20px;}
+/* ---- CONTACT ---- */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start;}
+.contact-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.2rem,5vw,4.8rem);line-height:.92;letter-spacing:.03em;text-transform:uppercase;color:var(--ink);margin-bottom:18px;}
 .contact-title .ac{color:var(--green);}
 .contact-title .ag{color:var(--amber);}
-.contact-body{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;font-style:italic;color:var(--muted);line-height:1.9;margin-bottom:32px;}
-.contact-info{display:flex;flex-direction:column;gap:12px;margin-bottom:32px;}
-.ci-row{display:flex;align-items:center;gap:16px;padding:16px 20px;background:var(--light);border:1.5px solid var(--mid);border-left:4px solid var(--green);}
-.ci-icon{width:36px;height:36px;background:var(--green-pale);display:flex;align-items:center;justify-content:center;color:var(--green);flex-shrink:0;}
-.ci-label{font-family:'Syne',sans-serif;font-size:.58rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--green);margin-bottom:2px;}
-.ci-val{font-size:.9rem;color:var(--ink);font-weight:500;}
-.ci-val a{color:var(--green);transition:color var(--tr);}
-.ci-val a:hover{color:var(--green-dk);}
-.cform{background:#fff;border:1.5px solid var(--mid);border-top:4px solid var(--green);box-shadow:0 8px 40px rgba(0,0,0,.08);}
-.cform-head{background:var(--green);padding:22px 28px;}
-.cform-head h3{font-family:'Syne',sans-serif;font-size:.9rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:#fff;margin-bottom:4px;}
-.cform-head p{font-size:.76rem;color:rgba(255,255,255,.65);}
-.cform-body{padding:24px 28px;}
-.est-fg{display:flex;flex-direction:column;gap:4px;margin-bottom:11px;}
-.est-fg label{font-family:'Syne',sans-serif;font-size:.58rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);}
-.est-fg input,.est-fg select,.est-fg textarea{background:var(--off-white);border:1.5px solid var(--mid);padding:11px 14px;color:var(--ink);font-family:'DM Sans',sans-serif;font-size:.9rem;width:100%;outline:none;transition:border-color var(--tr);-webkit-appearance:none;}
+.contact-body{font-size:.96rem;font-weight:300;color:var(--muted);line-height:1.8;margin-bottom:24px;font-style:italic;}
+.ci{display:flex;flex-direction:column;gap:10px;margin-bottom:28px;}
+.ci-row{display:flex;align-items:center;gap:14px;padding:14px 18px;background:var(--light);border:1.5px solid var(--mid);border-left:4px solid var(--green);}
+.ci-icon{width:34px;height:34px;background:var(--green-pale);display:flex;align-items:center;justify-content:center;color:var(--green);flex-shrink:0;}
+.ci-lbl{font-family:'Syne',sans-serif;font-size:.56rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--green);margin-bottom:1px;}
+.ci-val{font-size:.88rem;color:var(--ink);font-weight:500;}
+.ci-val a{color:var(--green);}
+.cform{background:#fff;border-top:4px solid var(--green);box-shadow:0 6px 32px rgba(0,0,0,.08);}
+.cform-head{background:var(--green);padding:20px 24px;}
+.cform-head h3{font-family:'Syne',sans-serif;font-size:.86rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:#fff;margin-bottom:3px;}
+.cform-head p{font-size:.74rem;color:rgba(255,255,255,.62);}
+.cform-body{padding:22px 24px;}
+.est-fg{display:flex;flex-direction:column;gap:3px;margin-bottom:10px;}
+.est-fg label{font-family:'Syne',sans-serif;font-size:.56rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);}
+.est-fg input,.est-fg select,.est-fg textarea{background:var(--off);border:1.5px solid var(--mid);padding:10px 13px;color:var(--ink);font-family:'DM Sans',sans-serif;font-size:.88rem;width:100%;outline:none;-webkit-appearance:none;}
 .est-fg input:focus,.est-fg select:focus,.est-fg textarea:focus{border-color:var(--green);}
-.est-fg select option{background:#fff;color:var(--ink);}
-.est-fg textarea{resize:none;min-height:90px;}
+.est-fg textarea{resize:none;min-height:88px;}
 .row2{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
-.cform-body .btn{width:100%;justify-content:center;margin-top:4px;font-size:.8rem;padding:15px;}
+.form-note{text-align:center;margin-top:7px;font-size:.6rem;color:var(--muted);}
+.success-msg{display:none;margin-top:10px;font-family:'Syne',sans-serif;font-size:.76rem;font-weight:700;color:var(--green);letter-spacing:.06em;}
 
-/* FOOTER CTA */
-.footer-cta{background:var(--green-dk);padding:32px 0;border-top:4px solid var(--amber);}
-.footer-cta-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;}
-.footer-cta-label{font-family:'Syne',sans-serif;font-size:1rem;font-weight:800;color:#fff;margin-bottom:3px;}
-.footer-cta-sub{font-size:.84rem;color:rgba(255,255,255,.55);}
+/* ---- FOOTER CTA ---- */
+.footer-cta{background:var(--green-dk);padding:28px 0;border-top:4px solid var(--amber);}
+.footer-cta-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;}
+.footer-cta-txt h4{font-family:'Syne',sans-serif;font-size:.96rem;font-weight:800;color:#fff;margin-bottom:2px;}
+.footer-cta-txt p{font-size:.82rem;color:rgba(255,255,255,.52);}
 .footer-cta-btns{display:flex;gap:10px;flex-wrap:wrap;}
 
-/* FOOTER */
+/* ---- FOOTER ---- */
 footer{background:#0f1e16;}
-.footer-main{padding:60px 0 40px;}
-.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;}
-.footer-logo img{height:52px;width:auto;margin-bottom:14px;filter:brightness(0) invert(1);}
-.footer-desc{font-size:.84rem;font-weight:300;color:rgba(255,255,255,.38);line-height:1.9;max-width:260px;margin-bottom:16px;}
-.footer-col-title{font-family:'Syne',sans-serif;font-size:.6rem;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--amber);margin-bottom:16px;}
-.footer-links{list-style:none;display:flex;flex-direction:column;gap:10px;}
-.footer-links a{font-size:.84rem;font-weight:300;color:rgba(255,255,255,.38);transition:color var(--tr);}
+.footer-main{padding:56px 0 36px;}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;}
+.footer-logo img{height:48px;width:auto;margin-bottom:12px;filter:brightness(0) invert(1);}
+.footer-desc{font-size:.82rem;color:rgba(255,255,255,.36);line-height:1.85;max-width:250px;margin-bottom:14px;}
+.footer-col-title{font-family:'Syne',sans-serif;font-size:.58rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--amber);margin-bottom:14px;}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.footer-links a{font-size:.82rem;color:rgba(255,255,255,.36);}
 .footer-links a:hover{color:#7dd4b8;}
-.footer-contact-list{list-style:none;display:flex;flex-direction:column;gap:12px;}
-.footer-contact-list li{display:flex;align-items:flex-start;gap:9px;font-size:.83rem;color:rgba(255,255,255,.38);line-height:1.5;}
-.footer-contact-list li svg{flex-shrink:0;margin-top:2px;color:var(--amber);}
-.footer-contact-list a{color:rgba(255,255,255,.38);transition:color var(--tr);}
-.footer-contact-list a:hover{color:#7dd4b8;}
-.footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;padding:20px 0;border-top:1px solid rgba(255,255,255,.07);}
-.footer-copy{font-size:.74rem;color:rgba(255,255,255,.22);}
-.footer-dev{font-family:'Syne',sans-serif;font-size:.64rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.2);}
-.footer-dev a{color:inherit;transition:color var(--tr);}
+.footer-contacts{list-style:none;display:flex;flex-direction:column;gap:10px;}
+.footer-contacts li{display:flex;align-items:flex-start;gap:8px;font-size:.82rem;color:rgba(255,255,255,.36);line-height:1.5;}
+.footer-contacts li svg{flex-shrink:0;margin-top:2px;color:var(--amber);}
+.footer-contacts a{color:rgba(255,255,255,.36);}
+.footer-contacts a:hover{color:#7dd4b8;}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;padding:18px 0;border-top:1px solid rgba(255,255,255,.07);}
+.footer-copy{font-size:.72rem;color:rgba(255,255,255,.22);}
+.footer-dev{font-family:'Syne',sans-serif;font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.2);}
+.footer-dev a{color:inherit;}
 .footer-dev a:hover{color:var(--amber);}
 
-/* FLOAT CTA */
-.float-cta{position:fixed;bottom:24px;right:24px;z-index:150;display:none;}
+/* ---- FLOAT CTA ---- */
+.float-cta{position:fixed;bottom:22px;right:22px;z-index:150;display:none;}
 .float-cta.vis{display:block;}
-.float-cta .btn{box-shadow:0 8px 32px rgba(40,102,88,.45);animation:pulsebtn 2.5s ease-in-out infinite;}
-@keyframes pulsebtn{0%,100%{box-shadow:0 8px 32px rgba(40,102,88,.4);}50%{box-shadow:0 8px 48px rgba(40,102,88,.7);}}
 
-/* REVEAL */
-.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s cubic-bezier(.22,.61,.36,1);}
-.reveal.vis{opacity:1;transform:translateY(0);}
-.d1{transition-delay:.1s;}.d2{transition-delay:.2s;}.d3{transition-delay:.3s;}
-
-/* ══ RESPONSIVE ══ */
+/* ---- RESPONSIVE ---- */
 @media(max-width:1024px){
-  .hero-grid{grid-template-columns:1fr;gap:36px;}
-  .hqcard{max-width:100%;}
-  .svc-grid{grid-template-columns:1fr;gap:4px;}
-  .svc-card:first-child{grid-column:auto;min-height:340px;}
-  .water-grid{grid-template-columns:1fr;gap:48px;}
-  .water-img-accent{width:42%;right:-8px;bottom:-8px;}
-  .about-grid{grid-template-columns:1fr;gap:60px;}
-  .nursery-inner{grid-template-columns:1fr;}
-  .nursery-right{min-height:280px;}
-  .contact-grid{grid-template-columns:1fr;gap:48px;}
-  .gallery-bento{grid-template-rows:220px 220px;}
+  .hero-grid{grid-template-columns:1fr;gap:32px;}
+  .svc-grid{grid-template-columns:1fr;}
+  .svc-card:first-child{grid-column:auto;min-height:320px;}
+  .water-grid{grid-template-columns:1fr;gap:40px;}
+  .about-grid{grid-template-columns:1fr;gap:52px;}
+  .nursery-wrap{grid-template-columns:1fr;}
+  .contact-grid{grid-template-columns:1fr;gap:44px;}
+  .gal-grid{grid-template-rows:200px 200px;}
   .footer-grid{grid-template-columns:1fr 1fr;gap:2rem;}
   .footer-grid>*:first-child{grid-column:1/-1;}
 }
 @media(max-width:768px){
-  /* Nav */
-  .nav-links{display:none;}
+  .nav-links,.nav-right .btn:first-of-type{display:none;}
   .hamburger{display:flex;}
-  .nav-right .btn:first-of-type{display:none;}
   .nav-inner{padding:0 16px;}
-  /* Announce */
-  .announce span{font-size:.6rem;letter-spacing:.1em;}
-  /* Demo badge */
-  .demo-badge{font-size:.52rem;padding:6px 10px 6px 9px;top:60px;}
-  /* Sections */
+  .announce p{font-size:.58rem;letter-spacing:.08em;}
+  .demo-badge{font-size:.52rem;padding:6px 10px 6px 8px;top:60px;}
   .sec{padding:56px 0;}
-  .container{padding:0 18px;}
-  /* Hero */
-  .hero-inner{padding:88px 18px 56px;}
-  .hero-grid{grid-template-columns:1fr;gap:32px;}
-  .hero-title{font-size:clamp(2.6rem,11vw,3.8rem);}
-  .hero-location{font-size:.95rem;}
-  .hero-sub{font-size:.9rem;margin-bottom:24px;}
-  .hero-actions{flex-direction:column;gap:10px;}
-  .hero-actions .btn{width:100% !important;justify-content:center;padding:14px 20px !important;font-size:.76rem !important;}
-  .htbar{width:100%;flex-direction:column;gap:8px;padding:14px 16px;}
+  .container{padding:0 16px;}
+  .hero-inner{padding:86px 16px 56px;}
+  .hero-title{font-size:clamp(2.6rem,12vw,3.8rem);}
+  .hero-loc{font-size:.9rem;}
+  .hero-sub{font-size:.88rem;margin-bottom:22px;}
+  .hero-btns{flex-direction:column;gap:10px;}
+  .hero-btns .btn{width:100%;justify-content:center;}
+  .htbar{flex-direction:column;gap:8px;padding:14px 16px;width:100%;}
   .htbar-div{display:none;}
-  .htbar-item{font-size:.68rem;}
-  /* Services */
-  .svc-grid{gap:3px;}
+  .htbar-item{font-size:.66rem;}
+  .section-head{margin-bottom:36px;}
   .svc-card{min-height:240px;}
   .svc-card:first-child{min-height:260px;}
-  .svc-name{font-size:1.4rem;}
-  .svc-card:first-child .svc-name{font-size:1.9rem;}
-  .svc-desc{font-size:.8rem;}
-  .section-head{margin-bottom:40px;}
-  /* Water */
+  .svc-name{font-size:1.5rem;}
+  .svc-card:first-child .svc-name{font-size:2rem;}
   .water-inner{padding:60px 0;}
-  .water-title{font-size:clamp(2.6rem,10vw,3.8rem);}
-  .water-badge{position:static;display:inline-block;margin-bottom:16px;}
-  .water-img-main{aspect-ratio:16/9;}
-  .water-img-accent{display:none;}
-  .water-features{grid-template-columns:1fr 1fr;gap:8px;}
-  /* About */
-  .about-img-wrap{padding-bottom:24px;}
-  .about-img-frame{aspect-ratio:4/3;}
-  .about-year-badge{right:0;bottom:-16px;}
-  .about-title{font-size:clamp(2.2rem,9vw,3rem);}
-  .about-stats{grid-template-columns:repeat(3,1fr);}
+  .water-title{font-size:clamp(2.6rem,10vw,3.6rem);}
+  .water-badge{margin-bottom:14px;}
+  .water-img-main img{height:240px;}
+  .water-img-accent img{height:140px;}
+  .water-feats{grid-template-columns:1fr 1fr;gap:6px;}
+  .about-img-frame img{height:320px;}
+  .about-title{font-size:clamp(2rem,9vw,3rem);}
+  .stats-row{grid-template-columns:repeat(3,1fr);}
   .stat{padding:14px 6px;}
-  .stat-num{font-size:2rem;}
-  .services-list{gap:6px;}
-  .svc-pill{font-size:.6rem;padding:6px 10px;}
-  /* Gallery */
-  .gallery-bento{grid-template-columns:1fr 1fr;grid-template-rows:auto;gap:3px;}
+  .stat-num{font-size:2.2rem;}
+  .gal-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto;gap:3px;}
   .gal-item:nth-child(1){grid-column:span 2;grid-row:auto;aspect-ratio:16/9;}
   .gal-item:nth-child(4){grid-column:auto;aspect-ratio:1;}
   .gal-item{aspect-ratio:1;}
-  /* Nursery */
   .nursery-left{padding:36px 20px;}
   .nursery-title{font-size:clamp(2rem,8vw,2.8rem);}
   .nursery-right{min-height:220px;}
-  .nursery-btns{flex-direction:column;gap:10px;}
+  .nursery-btns{flex-direction:column;gap:8px;}
   .nursery-btns .btn{width:100%;justify-content:center;}
-  /* Contact */
-  .contact-title{font-size:clamp(2.2rem,9vw,3rem);}
-  .ci-row{padding:12px 14px;gap:12px;}
+  .contact-title{font-size:clamp(2rem,9vw,3rem);}
   .row2{grid-template-columns:1fr;}
-  .cform-body{padding:18px 16px;}
-  .hqcard-body{padding:16px 18px;}
-  .hqcard-head{padding:16px 18px;}
-  /* Footer CTA */
-  .footer-cta-inner{flex-direction:column;align-items:flex-start;gap:16px;}
-  .footer-cta-btns{width:100%;flex-direction:column;gap:10px;}
+  .ci-row{padding:12px 14px;}
+  .footer-cta-inner{flex-direction:column;align-items:flex-start;gap:14px;}
+  .footer-cta-btns{width:100%;flex-direction:column;gap:8px;}
   .footer-cta-btns .btn{width:100%;justify-content:center;}
-  /* Footer */
   .footer-grid{grid-template-columns:1fr;}
   .footer-grid>*:first-child{grid-column:auto;}
-  .footer-bottom{flex-direction:column;align-items:flex-start;gap:8px;}
-  /* Float CTA */
-  .float-cta{bottom:16px;right:16px;}
-  .float-cta .btn{padding:12px 18px;font-size:.68rem;}
+  .footer-bottom{flex-direction:column;align-items:flex-start;}
+  .float-cta{bottom:14px;right:14px;}
 }
 @media(max-width:480px){
   .hero-title{font-size:2.4rem;}
-  .announce span{font-size:.52rem;letter-spacing:.06em;}
-  .about-stats{grid-template-columns:1fr;}
+  .sec-title,.contact-title,.about-title,.nursery-title{font-size:2rem;}
+  .stats-row{grid-template-columns:1fr;}
   .stat{border-right:none;border-bottom:1px solid var(--mid);}
   .stat:last-child{border-bottom:none;}
-  .gallery-bento{grid-template-columns:1fr;}
+  .gal-grid{grid-template-columns:1fr;}
   .gal-item:nth-child(1){grid-column:auto;aspect-ratio:4/3;}
   .gal-item{aspect-ratio:4/3;}
-  .water-features{grid-template-columns:1fr;}
-  .sec-title{font-size:2rem;}
-  .contact-title{font-size:2rem;}
-  .about-title{font-size:2rem;}
-  .nursery-title{font-size:1.9rem;}
-  .demo-badge{font-size:.48rem;top:56px;}
+  .water-feats{grid-template-columns:1fr;}
+  .demo-badge{top:56px;font-size:.48rem;}
 }
 </style>
 </head>
@@ -402,17 +340,18 @@ footer{background:#0f1e16;}
 
 <div class="demo-badge">Live Demo</div>
 
+<!-- Float CTA -->
 <div class="float-cta" id="floatCta">
   <a href="#contact" class="btn btn-green">
-    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.37a16 16 0 0 0 5.72 5.72l1.37-1.37a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.37a16 16 0 0 0 5.72 5.72l1.37-1.37a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
     Free Quote
   </a>
 </div>
 
-<!-- Mobile Drawer -->
+<!-- Drawer -->
 <div class="drawer" id="drawer">
   <button class="drawer-close" id="drawerClose">&times;</button>
-  <div class="drawer-logo"><img src="https://bigskymountainscapes.net/wp-content/uploads/2020/03/Starz-Logo-large.png" alt="Big Sky Mountain Scapes"/></div>
+  <div class="drawer-logo"><img src="https://bigskymountainscapes.net/wp-content/uploads/2020/03/Starz-Logo-large.png" alt="Logo"/></div>
   <a href="#" onclick="closeDrawer()">Home</a>
   <a href="#services" onclick="closeDrawer()">Services</a>
   <a href="#water" onclick="closeDrawer()">Waterfalls</a>
@@ -423,15 +362,13 @@ footer{background:#0f1e16;}
 
 <!-- Announce -->
 <div class="announce">
-  <span>⬥ Serving Big Sky, West Yellowstone &amp; Surrounding Montana Since 1992 &nbsp;·&nbsp; (406) 579-4607 ⬥</span>
+  <p>Serving Big Sky, West Yellowstone &amp; Surrounding Montana Since 1992 &nbsp;·&nbsp; (406) 579-4607</p>
 </div>
 
 <!-- Nav -->
 <nav id="mainNav">
   <div class="nav-inner">
-    <a href="#">
-      <img src="https://bigskymountainscapes.net/wp-content/uploads/2020/03/Starz-Logo-large.png" alt="Big Sky Mountain Scapes" style="height:44px;width:auto;"/>
-    </a>
+    <a href="#"><img src="https://bigskymountainscapes.net/wp-content/uploads/2020/03/Starz-Logo-large.png" alt="Big Sky Mountain Scapes" style="height:42px;width:auto;"/></a>
     <ul class="nav-links">
       <li><a href="#">Home</a></li>
       <li><a href="#services">Services</a></li>
@@ -440,8 +377,8 @@ footer{background:#0f1e16;}
       <li><a href="#gallery">Gallery</a></li>
     </ul>
     <div class="nav-right">
-      <a href="tel:+14065794607" class="btn btn-outline" style="padding:9px 18px;font-size:.66rem;">(406) 579-4607</a>
-      <a href="#contact" class="btn btn-green" style="padding:9px 18px;font-size:.66rem;">Get a Quote</a>
+      <a href="tel:+14065794607" class="btn btn-outline" style="padding:8px 16px;font-size:.64rem;">(406) 579-4607</a>
+      <a href="#contact" class="btn btn-green" style="padding:8px 16px;font-size:.64rem;">Get a Quote</a>
       <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -449,81 +386,55 @@ footer{background:#0f1e16;}
 
 <!-- HERO -->
 <section id="hero">
-  <div class="hero-bg">
-    <img src="https://bigskymountainscapes.net/wp-content/uploads/2024/06/Lone-Mountain-Ranch-scaled.jpeg" alt="Big Sky Mountain Scapes landscape"/>
-  </div>
+  <div class="hero-bg"><img src="https://bigskymountainscapes.net/wp-content/uploads/2024/06/Lone-Mountain-Ranch-scaled.jpeg" alt="Big Sky landscape"/></div>
   <div class="hero-overlay"></div>
   <div class="hero-mountains">
-    <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="display:block;width:100%;height:70px;">
-      <path d="M0,100 L0,70 L80,35 L160,60 L280,10 L380,48 L480,18 L560,52 L660,5 L760,44 L860,22 L960,58 L1060,12 L1160,50 L1280,28 L1360,55 L1440,38 L1440,100 Z" fill="#ffffff"/>
+    <svg viewBox="0 0 1440 90" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="display:block;width:100%;height:60px;">
+      <path d="M0,90 L0,65 L80,30 L160,55 L280,8 L380,44 L480,16 L560,48 L660,4 L760,40 L860,20 L960,54 L1060,10 L1160,46 L1280,26 L1360,50 L1440,34 L1440,90 Z" fill="#fff"/>
     </svg>
   </div>
   <div class="hero-inner">
     <div class="hero-grid">
       <div>
-        <div class="hero-eyebrow">
-          <div class="hero-line"></div>
-          <span class="hero-eyebrow-text">Big Sky, Montana · Est. 1992</span>
-        </div>
+        <div class="hero-eyebrow"><div class="hero-line"></div><span>Big Sky, Montana &middot; Est. 1992</span></div>
         <h1 class="hero-title">Big Sky<br><span class="ac">Mountain</span><br><span class="ag">Scapes</span></h1>
-        <p class="hero-location">Full Service Landscaping &amp; Design</p>
-        <p class="hero-sub">Transforming Montana properties for over 30 years. Waterfalls, hardscaping, and custom landscape design — built to match the land it belongs to.</p>
-        <div class="hero-actions">
-          <a href="tel:+14065794607" class="btn btn-amber" style="font-size:.78rem;padding:16px 30px;">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.37a16 16 0 0 0 5.72 5.72l1.37-1.37a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            Call Doug — (406) 579-4607
+        <p class="hero-loc">Full Service Landscaping &amp; Design</p>
+        <p class="hero-sub">Transforming Montana properties for over 30 years. Waterfalls, hardscaping, and custom landscape design built to match the land it belongs to.</p>
+        <div class="hero-btns">
+          <a href="tel:+14065794607" class="btn btn-amber">
+            <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.37a16 16 0 0 0 5.72 5.72l1.37-1.37a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call Doug &mdash; (406) 579-4607
           </a>
-          <a href="#contact" class="btn btn-outline-white" style="font-size:.78rem;padding:16px 30px;">Get Free Estimate</a>
+          <a href="#contact" class="btn btn-outline-w">Get Free Estimate</a>
         </div>
         <div class="htbar">
-          <div class="htbar-item">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            30+ Years Experience
-          </div>
+          <div class="htbar-item"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>30+ Years Experience</div>
           <div class="htbar-div"></div>
-          <div class="htbar-item">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Big Sky · West Yellowstone
-          </div>
+          <div class="htbar-item"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Big Sky &middot; West Yellowstone</div>
           <div class="htbar-div"></div>
-          <div class="htbar-item">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8C8 10 5.9 16.17 3.82 22"/><path d="M9.5 8c1 4 4 7 9 8"/></svg>
-            Tree Nursery On-Site
-          </div>
+          <div class="htbar-item"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 22"/><path d="M9.5 8c1 4 4 7 9 8"/></svg>Tree Nursery On-Site</div>
         </div>
       </div>
-      <!-- Quote Card -->
-      <div class="hqcard reveal d2">
-        <div class="hqcard-head">
-          <h3>Get a Free Estimate</h3>
-          <p>Same-day response · No obligation</p>
-        </div>
+      <!-- Quote card -->
+      <div class="hqcard">
+        <div class="hqcard-head"><h3>Get a Free Estimate</h3><p>Same-day response &middot; No obligation</p></div>
         <div class="hqcard-body">
-          <form onsubmit="handleForm(event,this,'formSuccessH')">
+          <form onsubmit="handleForm(event,this,'hs1')">
             <div class="fg"><label>Your Name</label><input type="text" placeholder="Your name" required/></div>
             <div class="fg"><label>Phone Number</label><input type="tel" placeholder="(406) 000-0000" required/></div>
-            <div class="fg">
-              <label>Service Needed</label>
-              <select required>
-                <option value="" disabled selected>Select a service...</option>
-                <option>Water Feature / Waterfall</option>
-                <option>Landscape Design</option>
-                <option>Patio / Hardscaping</option>
-                <option>Retaining Wall</option>
-                <option>Custom Bedding</option>
-                <option>Fire Pit</option>
-                <option>Pond / Stream</option>
-                <option>Tree Nursery</option>
-                <option>Other</option>
+            <div class="fg"><label>Service Needed</label>
+              <select required><option value="" disabled selected>Select a service...</option>
+                <option>Water Feature / Waterfall</option><option>Landscape Design</option>
+                <option>Patio / Hardscaping</option><option>Retaining Wall</option>
+                <option>Custom Bedding</option><option>Fire Pit</option>
+                <option>Pond / Stream</option><option>Tree Nursery</option><option>Other</option>
               </select>
             </div>
             <div class="fg"><label>City / Area</label><input type="text" placeholder="Big Sky, MT"/></div>
-            <button type="submit" class="btn btn-green">Send My Request
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </button>
-            <div id="formSuccessH" style="display:none;margin-top:10px;font-family:'Syne',sans-serif;font-size:.78rem;font-weight:600;color:var(--green);letter-spacing:.06em;">Sent! Doug will reach out same day.</div>
+            <button type="submit" class="btn btn-green btn-full">Send My Request &rarr;</button>
+            <div class="success-msg" id="hs1">Sent! Doug will reach out same day.</div>
           </form>
-          <p class="hqcard-note">Free estimate · No spam · We call you back fast.</p>
+          <p class="hqcard-note">Free estimate &middot; No spam &middot; Fast response</p>
         </div>
       </div>
     </div>
@@ -537,7 +448,7 @@ footer{background:#0f1e16;}
     <div class="marquee-item"><span class="marquee-dot"></span><span class="marquee-text">Landscape Design</span></div>
     <div class="marquee-item"><span class="marquee-dot"></span><span class="marquee-text">Custom Patios</span></div>
     <div class="marquee-item"><span class="marquee-dot"></span><span class="marquee-text">Retaining Walls</span></div>
-    <div class="marquee-item"><span class="marquee-dot"></span><span class="marquee-text">Ponds & Streams</span></div>
+    <div class="marquee-item"><span class="marquee-dot"></span><span class="marquee-text">Ponds &amp; Streams</span></div>
     <div class="marquee-item"><span class="marquee-dot"></span><span class="marquee-text">Fire Pits</span></div>
     <div class="marquee-item"><span class="marquee-dot"></span><span class="marquee-text">Tree Nursery</span></div>
     <div class="marquee-item"><span class="marquee-dot"></span><span class="marquee-text">Custom Bedding</span></div>
@@ -546,7 +457,7 @@ footer{background:#0f1e16;}
     <div class="marquee-item"><span class="marquee-dot"></span><span class="marquee-text">Landscape Design</span></div>
     <div class="marquee-item"><span class="marquee-dot"></span><span class="marquee-text">Custom Patios</span></div>
     <div class="marquee-item"><span class="marquee-dot"></span><span class="marquee-text">Retaining Walls</span></div>
-    <div class="marquee-item"><span class="marquee-dot"></span><span class="marquee-text">Ponds & Streams</span></div>
+    <div class="marquee-item"><span class="marquee-dot"></span><span class="marquee-text">Ponds &amp; Streams</span></div>
     <div class="marquee-item"><span class="marquee-dot"></span><span class="marquee-text">Fire Pits</span></div>
     <div class="marquee-item"><span class="marquee-dot"></span><span class="marquee-text">Tree Nursery</span></div>
     <div class="marquee-item"><span class="marquee-dot"></span><span class="marquee-text">Custom Bedding</span></div>
@@ -557,12 +468,12 @@ footer{background:#0f1e16;}
 <!-- SERVICES -->
 <section class="sec sec-white" id="services">
   <div class="container">
-    <div class="section-head reveal">
-      <p class="label">What We Do</p>
+    <div class="section-head">
+      <span class="lbl">What We Do</span>
       <h2 class="sec-title">Our <span class="ac">Services</span></h2>
-      <p class="sec-sub">From small ponds to full property transformations — done right, every time. No project too big or small.</p>
+      <p class="sec-sub">From small ponds to full property transformations &mdash; done right every time. No project too big or small.</p>
     </div>
-    <div class="svc-grid reveal">
+    <div class="svc-grid">
       <div class="svc-card">
         <div class="svc-img" style="background-image:url('https://bigskymountainscapes.net/wp-content/uploads/2020/02/Waterfall_Use.png')"></div>
         <div class="svc-overlay"></div>
@@ -570,8 +481,8 @@ footer{background:#0f1e16;}
         <div class="svc-content">
           <div class="svc-num">01</div>
           <div class="svc-name">Landscape Design</div>
-          <p class="svc-desc">Backyard makeovers, entryways, full property plans. We work with you every step of the way to make your vision a reality.</p>
-          <a href="#contact" class="svc-link">Get a Quote <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <p class="svc-desc">Backyard makeovers, entryways, full property plans. We work with you every step of the way.</p>
+          <a href="#contact" class="svc-link">Get a Quote &rarr;</a>
         </div>
       </div>
       <div class="svc-card">
@@ -580,8 +491,8 @@ footer{background:#0f1e16;}
         <div class="svc-content">
           <div class="svc-num">02</div>
           <div class="svc-name">Water Features</div>
-          <p class="svc-desc">Ponds, streams, and waterfalls built to blow you away. Over 30 years of water feature expertise.</p>
-          <a href="#water" class="svc-link">Learn More <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <p class="svc-desc">Ponds, streams, and waterfalls built to blow you away. 30+ years of water feature expertise.</p>
+          <a href="#water" class="svc-link">Learn More &rarr;</a>
         </div>
       </div>
       <div class="svc-card">
@@ -590,8 +501,8 @@ footer{background:#0f1e16;}
         <div class="svc-content">
           <div class="svc-num">03</div>
           <div class="svc-name">Patios &amp; Walls</div>
-          <p class="svc-desc">Custom patios, retaining walls, and fire pits — beautiful and built to last.</p>
-          <a href="#contact" class="svc-link">Get a Quote <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <p class="svc-desc">Custom patios, retaining walls, and fire pits &mdash; beautiful and built to last.</p>
+          <a href="#contact" class="svc-link">Get a Quote &rarr;</a>
         </div>
       </div>
       <div class="svc-card">
@@ -601,7 +512,7 @@ footer{background:#0f1e16;}
           <div class="svc-num">04</div>
           <div class="svc-name">Lawn &amp; Bedding</div>
           <p class="svc-desc">Custom bedding, lawn care, sod, and seasonal maintenance done right.</p>
-          <a href="#contact" class="svc-link">Get a Quote <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="#contact" class="svc-link">Get a Quote &rarr;</a>
         </div>
       </div>
     </div>
@@ -609,45 +520,34 @@ footer{background:#0f1e16;}
 </section>
 
 <!-- WATER FEATURES -->
-<section id="water" style="position:relative;overflow:hidden;min-height:600px;">
-  <div class="water-bg">
-    <img src="https://bigskymountainscapes.net/wp-content/uploads/2020/02/IMG_1825-1-scaled.jpg" alt="Waterfall"/>
-  </div>
-  <div class="water-bg-overlay"></div>
+<section id="water" style="position:relative;overflow:hidden;min-height:560px;">
+  <div class="water-bg"><img src="https://bigskymountainscapes.net/wp-content/uploads/2020/02/IMG_1825-1-scaled.jpg" alt="Waterfall"/></div>
+  <div class="water-bg-ov"></div>
   <div style="position:relative;z-index:2;">
     <div class="container">
       <div class="water-inner">
         <div class="water-grid">
-          <div class="water-left reveal">
-            <p class="label">Our Specialty</p>
+          <div>
+            <span class="water-lbl">Our Specialty</span>
             <h2 class="water-title">Water<br><span class="ac">Features</span></h2>
-            <p class="water-body">Mountain Scapes specializes in water features that will blow you away. From intimate garden ponds to extravagant multi-tier waterfalls — we will get the job done right.</p>
-            <div class="water-features">
-              <div class="wf-item"><div class="wf-dot"></div><div class="wf-label">Waterfalls</div></div>
-              <div class="wf-item"><div class="wf-dot"></div><div class="wf-label">Ponds</div></div>
-              <div class="wf-item"><div class="wf-dot"></div><div class="wf-label">Streams</div></div>
-              <div class="wf-item"><div class="wf-dot"></div><div class="wf-label">Fire &amp; Water</div></div>
-              <div class="wf-item"><div class="wf-dot"></div><div class="wf-label">Pondless Systems</div></div>
-              <div class="wf-item"><div class="wf-dot"></div><div class="wf-label">Custom Design</div></div>
+            <p class="water-body">Mountain Scapes specializes in water features that will blow you away. From intimate garden ponds to extravagant multi-tier waterfalls &mdash; we will get the job done right.</p>
+            <div class="water-feats">
+              <div class="wf"><div class="wf-dot"></div><span>Waterfalls</span></div>
+              <div class="wf"><div class="wf-dot"></div><span>Ponds</span></div>
+              <div class="wf"><div class="wf-dot"></div><span>Streams</span></div>
+              <div class="wf"><div class="wf-dot"></div><span>Fire &amp; Water</span></div>
+              <div class="wf"><div class="wf-dot"></div><span>Pondless Systems</span></div>
+              <div class="wf"><div class="wf-dot"></div><span>Custom Design</span></div>
             </div>
-            <a href="#contact" class="btn btn-white" style="font-size:.78rem;padding:16px 30px;">
-              Get a Water Feature Quote
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
+            <a href="#contact" class="btn btn-white">Get a Water Feature Quote &rarr;</a>
           </div>
-          <div class="water-right reveal d2">
+          <div class="water-right">
             <div class="water-badge">
               <span class="water-badge-num">30+</span>
               <span class="water-badge-sub">Years of Expertise</span>
             </div>
-            <div style="position:relative;">
-              <div class="water-img-main">
-                <img src="https://bigskymountainscapes.net/wp-content/uploads/2020/04/Waterfall-After-NEW.jpg" alt="Waterfall after"/>
-              </div>
-              <div class="water-img-accent">
-                <img src="https://bigskymountainscapes.net/wp-content/uploads/2020/02/waterfall-small.jpg" alt="Water feature"/>
-              </div>
-            </div>
+            <div class="water-img-main"><img src="https://bigskymountainscapes.net/wp-content/uploads/2020/04/Waterfall-After-NEW.jpg" alt="Waterfall after"/></div>
+            <div class="water-img-accent"><img src="https://bigskymountainscapes.net/wp-content/uploads/2020/02/waterfall-small.jpg" alt="Water feature"/></div>
           </div>
         </div>
       </div>
@@ -659,39 +559,27 @@ footer{background:#0f1e16;}
 <section class="sec sec-light" id="about">
   <div class="container">
     <div class="about-grid">
-      <div class="about-img-wrap reveal">
-        <div class="about-img-frame">
-          <img src="https://bigskymountainscapes.net/wp-content/uploads/2021/02/IMG_7351.jpg" alt="Doug Starz and the Mountain Scapes team"/>
-        </div>
-        <div class="about-year-badge">
-          <span class="about-year">1992</span>
-          <span class="about-year-sub">Founded in Big Sky, MT</span>
-        </div>
+      <div class="about-img-wrap">
+        <div class="about-img-frame"><img src="https://bigskymountainscapes.net/wp-content/uploads/2021/02/IMG_7351.jpg" alt="Mountain Scapes team"/></div>
+        <div class="about-yr"><span>1992</span><small>Founded in Big Sky, MT</small></div>
       </div>
-      <div class="about-content reveal d2">
-        <p class="label">Our Story</p>
+      <div>
+        <span class="lbl">Our Story</span>
         <h2 class="about-title">Built on<br><span class="ac">Montana</span><br><span class="ag">Values.</span></h2>
         <p class="about-body">Founded by Doug Starz in 1992, Mountain Scapes has been serving Big Sky, West Yellowstone, and the surrounding area with full-service landscaping and design for over 30 years.</p>
-        <p class="about-body">Specializing in waterfalls and water features, we transform properties into the backyard of your dreams — making every vision a reality, no project too big or small.</p>
-        <div class="about-stats">
-          <div class="stat"><span class="stat-num">30+</span><span class="stat-label">Years in Business</span></div>
-          <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Satisfaction Goal</span></div>
-          <div class="stat"><span class="stat-num">MT</span><span class="stat-label">Big Sky · W. Yellowstone</span></div>
+        <p class="about-body">Specializing in waterfalls and water features, we transform properties into the backyard of your dreams &mdash; making every vision a reality.</p>
+        <div class="stats-row">
+          <div class="stat"><span class="stat-num">30+</span><span class="stat-lbl">Years in Business</span></div>
+          <div class="stat"><span class="stat-num">100%</span><span class="stat-lbl">Satisfaction Goal</span></div>
+          <div class="stat"><span class="stat-num">MT</span><span class="stat-lbl">Big Sky &amp; W. Yellowstone</span></div>
         </div>
-        <p style="font-family:'Syne',sans-serif;font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--green);margin-bottom:12px;">Everything We Do</p>
-        <div class="services-list">
-          <span class="svc-pill">Custom Bedding</span>
-          <span class="svc-pill">Patios</span>
-          <span class="svc-pill">Retaining Walls</span>
-          <span class="svc-pill">Waterfalls</span>
-          <span class="svc-pill">Ponds &amp; Streams</span>
-          <span class="svc-pill">Fire Pits</span>
-          <span class="svc-pill">Landscape Design</span>
-          <span class="svc-pill">Tree Farm</span>
+        <p style="font-family:'Syne',sans-serif;font-size:.64rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--green);margin-bottom:10px;">Everything We Do</p>
+        <div class="pills">
+          <span class="pill">Custom Bedding</span><span class="pill">Patios</span><span class="pill">Retaining Walls</span>
+          <span class="pill">Waterfalls</span><span class="pill">Ponds &amp; Streams</span><span class="pill">Fire Pits</span>
+          <span class="pill">Landscape Design</span><span class="pill">Tree Farm</span>
         </div>
-        <div style="margin-top:32px;">
-          <a href="#contact" class="btn btn-green" style="font-size:.8rem;padding:15px 28px;">Start Your Project <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
+        <a href="#contact" class="btn btn-green">Start Your Project &rarr;</a>
       </div>
     </div>
   </div>
@@ -700,32 +588,17 @@ footer{background:#0f1e16;}
 <!-- GALLERY -->
 <section class="sec sec-white" id="gallery">
   <div class="container">
-    <div class="section-head reveal">
-      <p class="label">Our Work</p>
+    <div class="section-head">
+      <span class="lbl">Our Work</span>
       <h2 class="sec-title">Recent <span class="ag">Projects</span></h2>
       <p class="sec-sub">Real work from real Montana properties. Results that speak for themselves.</p>
     </div>
-    <div class="gallery-bento reveal">
-      <div class="gal-item">
-        <img src="https://bigskymountainscapes.net/wp-content/uploads/2020/04/Waterfall-After-NEW.jpg" alt="Custom waterfall" loading="lazy"/>
-        <div class="gal-overlay"><span class="gal-label">Custom Waterfall</span></div>
-      </div>
-      <div class="gal-item">
-        <img src="https://bigskymountainscapes.net/wp-content/uploads/2020/03/Walkway.png" alt="Walkway design" loading="lazy"/>
-        <div class="gal-overlay"><span class="gal-label">Walkway Design</span></div>
-      </div>
-      <div class="gal-item">
-        <img src="https://bigskymountainscapes.net/wp-content/uploads/2021/02/Backyard-After.jpg" alt="Backyard transformation" loading="lazy"/>
-        <div class="gal-overlay"><span class="gal-label">Backyard Transform</span></div>
-      </div>
-      <div class="gal-item">
-        <img src="https://bigskymountainscapes.net/wp-content/uploads/2020/02/brownstoneCrop_use.png" alt="Patio and hardscape" loading="lazy"/>
-        <div class="gal-overlay"><span class="gal-label">Patio &amp; Hardscape</span></div>
-      </div>
-      <div class="gal-item">
-        <img src="https://bigskymountainscapes.net/wp-content/uploads/2021/02/IMG_1186-scaled.jpg" alt="Landscape design" loading="lazy"/>
-        <div class="gal-overlay"><span class="gal-label">Landscape Design</span></div>
-      </div>
+    <div class="gal-grid">
+      <div class="gal-item"><img src="https://bigskymountainscapes.net/wp-content/uploads/2020/04/Waterfall-After-NEW.jpg" alt="Custom waterfall" loading="lazy"/><div class="gal-ov"><span class="gal-lbl">Custom Waterfall</span></div></div>
+      <div class="gal-item"><img src="https://bigskymountainscapes.net/wp-content/uploads/2020/03/Walkway.png" alt="Walkway" loading="lazy"/><div class="gal-ov"><span class="gal-lbl">Walkway Design</span></div></div>
+      <div class="gal-item"><img src="https://bigskymountainscapes.net/wp-content/uploads/2021/02/Backyard-After.jpg" alt="Backyard" loading="lazy"/><div class="gal-ov"><span class="gal-lbl">Backyard Transform</span></div></div>
+      <div class="gal-item"><img src="https://bigskymountainscapes.net/wp-content/uploads/2020/02/brownstoneCrop_use.png" alt="Patio" loading="lazy"/><div class="gal-ov"><span class="gal-lbl">Patio &amp; Hardscape</span></div></div>
+      <div class="gal-item"><img src="https://bigskymountainscapes.net/wp-content/uploads/2021/02/IMG_1186-scaled.jpg" alt="Landscape" loading="lazy"/><div class="gal-ov"><span class="gal-lbl">Landscape Design</span></div></div>
     </div>
   </div>
 </section>
@@ -733,26 +606,21 @@ footer{background:#0f1e16;}
 <!-- TREE NURSERY -->
 <section class="sec sec-white" id="nursery" style="padding-top:0;">
   <div class="container">
-    <div class="nursery-inner reveal">
+    <div class="nursery-wrap">
       <div class="nursery-left">
-        <p class="label">Highway 191</p>
+        <span class="nursery-lbl">Highway 191</span>
         <h2 class="nursery-title">Tree <span class="ag">Nursery</span></h2>
-        <p class="nursery-body">Full service tree nursery conveniently located right off Highway 191. Competitive prices on large Conifers and other native deciduous trees. Come see what we have in stock.</p>
+        <p class="nursery-body">Full service tree nursery right off Highway 191. Competitive prices on large Conifers and native deciduous trees. Come see what we have in stock.</p>
         <div class="nursery-btns">
-          <a href="https://maps.google.com/?q=47650+Gallatin+Rd+Big+Sky+MT" target="_blank" class="btn btn-amber" style="font-size:.74rem;padding:13px 24px;">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Get Directions
-          </a>
-          <a href="tel:+14065794607" class="btn btn-outline-white" style="font-size:.74rem;padding:13px 24px;">Call to Check Stock</a>
+          <a href="https://maps.google.com/?q=47650+Gallatin+Rd+Big+Sky+MT" target="_blank" class="btn btn-amber">Get Directions &rarr;</a>
+          <a href="tel:+14065794607" class="btn btn-outline-w">Call to Check Stock</a>
         </div>
-        <div class="nursery-address">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          47650 Gallatin Rd · Big Sky, MT 59716
+        <div class="nursery-addr">
+          <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          47650 Gallatin Rd &middot; Big Sky, MT 59716
         </div>
       </div>
-      <div class="nursery-right">
-        <img src="https://bigskymountainscapes.net/wp-content/uploads/2020/02/home_use.png" alt="Tree nursery and landscape"/>
-      </div>
+      <div class="nursery-right"><img src="https://bigskymountainscapes.net/wp-content/uploads/2020/02/home_use.png" alt="Tree nursery"/></div>
     </div>
   </div>
 </section>
@@ -761,40 +629,37 @@ footer{background:#0f1e16;}
 <section class="sec sec-light" id="contact">
   <div class="container">
     <div class="contact-grid">
-      <div class="contact-left reveal">
-        <p class="label">Get Started</p>
+      <div>
+        <span class="lbl">Get Started</span>
         <h2 class="contact-title">Get Your<br><span class="ac">Free</span><br><span class="ag">Estimate</span></h2>
-        <p class="contact-body">Ready to transform your property? Fill out the form or call Doug directly. We respond same day and always show up when we say we will.</p>
-        <div class="contact-info">
+        <p class="contact-body">Ready to transform your property? Fill out the form or call Doug directly. We respond same day.</p>
+        <div class="ci">
           <div class="ci-row">
-            <div class="ci-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.37a16 16 0 0 0 5.72 5.72l1.37-1.37a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
-            <div><div class="ci-label">Call Doug</div><div class="ci-val"><a href="tel:+14065794607">(406) 579-4607</a></div></div>
+            <div class="ci-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.37a16 16 0 0 0 5.72 5.72l1.37-1.37a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div><div class="ci-lbl">Call Doug</div><div class="ci-val"><a href="tel:+14065794607">(406) 579-4607</a></div></div>
           </div>
           <div class="ci-row">
-            <div class="ci-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
-            <div><div class="ci-label">Email</div><div class="ci-val"><a href="/cdn-cgi/l/email-protection#573338223079242336252d172e363f38387934383a"><span class="__cf_email__" data-cfemail="3e5a514b59104d4a5f4c447e475f565151105d5153">[email&#160;protected]</span></a></div></div>
+            <div class="ci-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div><div class="ci-lbl">Email</div><div class="ci-val"><a href="mailto:doug.starz@yahoo.com">doug.starz@yahoo.com</a></div></div>
           </div>
           <div class="ci-row">
-            <div class="ci-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-            <div><div class="ci-label">Address</div><div class="ci-val">47650 Gallatin Rd · Big Sky, MT 59716</div></div>
+            <div class="ci-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><div class="ci-lbl">Address</div><div class="ci-val">47650 Gallatin Rd &middot; Big Sky, MT 59716</div></div>
           </div>
           <div class="ci-row">
-            <div class="ci-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-            <div><div class="ci-label">Service Area</div><div class="ci-val">Big Sky · West Yellowstone · Surrounding MT</div></div>
+            <div class="ci-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><div class="ci-lbl">Service Area</div><div class="ci-val">Big Sky &middot; West Yellowstone &middot; Surrounding MT</div></div>
           </div>
         </div>
-        <a href="tel:+14065794607" class="btn btn-green" style="font-size:.78rem;padding:15px 28px;">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.37a16 16 0 0 0 5.72 5.72l1.37-1.37a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          Call Now — (406) 579-4607
+        <a href="tel:+14065794607" class="btn btn-green">
+          <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.37a16 16 0 0 0 5.72 5.72l1.37-1.37a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call Now &mdash; (406) 579-4607
         </a>
       </div>
-      <div class="cform reveal d2">
-        <div class="cform-head">
-          <h3>Request a Free Estimate</h3>
-          <p>We respond same day · No spam · No pressure</p>
-        </div>
+      <div class="cform">
+        <div class="cform-head"><h3>Request a Free Estimate</h3><p>Same day response &middot; No spam &middot; No pressure</p></div>
         <div class="cform-body">
-          <form onsubmit="handleForm(event,this,'formSuccessC')">
+          <form onsubmit="handleForm(event,this,'cs1')">
             <div class="row2">
               <div class="est-fg"><label>First Name</label><input type="text" placeholder="Doug" required/></div>
               <div class="est-fg"><label>Last Name</label><input type="text" placeholder="Johnson" required/></div>
@@ -803,30 +668,21 @@ footer{background:#0f1e16;}
               <div class="est-fg"><label>Phone</label><input type="tel" placeholder="(406) 000-0000" required/></div>
               <div class="est-fg"><label>Email</label><input type="email" placeholder="you@email.com"/></div>
             </div>
-            <div class="est-fg">
-              <label>Service Needed</label>
-              <select required>
-                <option value="" disabled selected>Select a service...</option>
-                <option>Water Feature / Waterfall</option>
-                <option>Landscape Design</option>
-                <option>Patio / Hardscaping</option>
-                <option>Retaining Wall</option>
-                <option>Custom Bedding</option>
-                <option>Fire Pit</option>
-                <option>Pond / Stream</option>
-                <option>Tree Nursery</option>
-                <option>Multiple Services</option>
-                <option>Not Sure Yet</option>
+            <div class="est-fg"><label>Service Needed</label>
+              <select required><option value="" disabled selected>Select a service...</option>
+                <option>Water Feature / Waterfall</option><option>Landscape Design</option>
+                <option>Patio / Hardscaping</option><option>Retaining Wall</option>
+                <option>Custom Bedding</option><option>Fire Pit</option>
+                <option>Pond / Stream</option><option>Tree Nursery</option>
+                <option>Multiple Services</option><option>Not Sure Yet</option>
               </select>
             </div>
             <div class="est-fg"><label>Property Address</label><input type="text" placeholder="123 Gallatin Rd, Big Sky, MT"/></div>
             <div class="est-fg"><label>Tell Us About Your Project</label><textarea placeholder="Describe what you're envisioning, timeline, any questions..."></textarea></div>
-            <button type="submit" class="btn btn-green">Send My Request
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </button>
-            <div id="formSuccessC" style="display:none;margin-top:10px;font-family:'Syne',sans-serif;font-size:.78rem;font-weight:600;color:var(--green);letter-spacing:.06em;">Sent! Doug will be in touch same day.</div>
+            <button type="submit" class="btn btn-green btn-full">Send My Request &rarr;</button>
+            <div class="success-msg" id="cs1">Sent! Doug will be in touch same day.</div>
           </form>
-          <p style="text-align:center;margin-top:8px;font-size:.62rem;color:var(--muted);">Free estimate · No obligation · Honest pricing.</p>
+          <p class="form-note">Free estimate &middot; No obligation &middot; Honest pricing.</p>
         </div>
       </div>
     </div>
@@ -837,16 +693,13 @@ footer{background:#0f1e16;}
 <div class="footer-cta">
   <div class="container">
     <div class="footer-cta-inner">
-      <div>
-        <div class="footer-cta-label">Ready to get started?</div>
-        <div class="footer-cta-sub">Free estimate · Same-day response · 30+ years experience</div>
-      </div>
+      <div class="footer-cta-txt"><h4>Ready to get started?</h4><p>Free estimate &middot; Same-day response &middot; 30+ years experience</p></div>
       <div class="footer-cta-btns">
-        <a href="tel:+14065794607" class="btn btn-outline-white" style="font-size:.7rem;padding:11px 20px;">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.37a16 16 0 0 0 5.72 5.72l1.37-1.37a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <a href="tel:+14065794607" class="btn btn-outline-w">
+          <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.37a16 16 0 0 0 5.72 5.72l1.37-1.37a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           (406) 579-4607
         </a>
-        <a href="#contact" class="btn btn-amber" style="font-size:.7rem;padding:11px 20px;">Get Free Quote</a>
+        <a href="#contact" class="btn btn-amber">Get Free Quote</a>
       </div>
     </div>
   </div>
@@ -858,7 +711,7 @@ footer{background:#0f1e16;}
     <div class="container">
       <div class="footer-grid">
         <div>
-          <div class="footer-logo"><img src="https://bigskymountainscapes.net/wp-content/uploads/2020/03/Starz-Logo-large.png" alt="Big Sky Mountain Scapes"/></div>
+          <div class="footer-logo"><img src="https://bigskymountainscapes.net/wp-content/uploads/2020/03/Starz-Logo-large.png" alt="Logo"/></div>
           <p class="footer-desc">Full service landscaping and design serving Big Sky, West Yellowstone, and surrounding Montana since 1992. Waterfalls, patios, fire pits, tree nursery, and more.</p>
         </div>
         <div>
@@ -869,7 +722,6 @@ footer{background:#0f1e16;}
             <li><a href="#services">Patios &amp; Hardscaping</a></li>
             <li><a href="#services">Retaining Walls</a></li>
             <li><a href="#services">Fire Pits</a></li>
-            <li><a href="#services">Custom Bedding</a></li>
             <li><a href="#nursery">Tree Nursery</a></li>
           </ul>
         </div>
@@ -880,9 +732,8 @@ footer{background:#0f1e16;}
             <li><a href="#about">Our Story</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#nursery">Tree Nursery</a></li>
           </ul>
-          <div class="footer-col-title" style="margin-top:24px;">Service Area</div>
+          <div class="footer-col-title" style="margin-top:20px;">Service Area</div>
           <ul class="footer-links">
             <li><a href="#">Big Sky, MT</a></li>
             <li><a href="#">West Yellowstone</a></li>
@@ -892,46 +743,29 @@ footer{background:#0f1e16;}
         </div>
         <div>
           <div class="footer-col-title">Contact</div>
-          <ul class="footer-contact-list">
-            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.37a16 16 0 0 0 5.72 5.72l1.37-1.37a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+14065794607">(406) 579-4607</a></li>
-            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="/cdn-cgi/l/email-protection#462229332168353227343c063f272e29296825292b"><span class="__cf_email__" data-cfemail="395d564c5e174a4d584b43794058515656175a5654">[email&#160;protected]</span></a></li>
-            <li><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>47650 Gallatin Rd, Big Sky, MT 59716</span></li>
+          <ul class="footer-contacts">
+            <li><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.37a16 16 0 0 0 5.72 5.72l1.37-1.37a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+14065794607">(406) 579-4607</a></li>
+            <li><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:doug.starz@yahoo.com">doug.starz@yahoo.com</a></li>
+            <li><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>47650 Gallatin Rd, Big Sky, MT 59716</span></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
         <p class="footer-copy">&copy; 2025 Big Sky Mountain Scapes. All rights reserved. Big Sky, MT.</p>
-        <span class="footer-dev">Live Demo · Built by <a href="https://contractorarsenal.com" target="_blank" rel="noopener">ContractorArsenal.com</a></span>
+        <span class="footer-dev">Live Demo &middot; Built by <a href="https://contractorarsenal.com" target="_blank" rel="noopener">ContractorArsenal.com</a></span>
       </div>
     </div>
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-const nav=document.getElementById('mainNav');
-const hero=document.getElementById('hero');
-const floatCta=document.getElementById('floatCta');
-window.addEventListener('scroll',()=>{
-  nav.classList.toggle('scrolled',window.scrollY>40);
-  floatCta.classList.toggle('vis',hero.getBoundingClientRect().bottom<0);
-},{passive:true});
-const ham=document.getElementById('hamburger');
-const drawer=document.getElementById('drawer');
-const dclose=document.getElementById('drawerClose');
-ham.addEventListener('click',()=>{
-  drawer.classList.add('open');document.body.style.overflow='hidden';
-  const sp=ham.querySelectorAll('span');
-  sp[0].style.transform='rotate(45deg) translate(5px,5px)';
-  sp[1].style.opacity='0';
-  sp[2].style.transform='rotate(-45deg) translate(5px,-5px)';
-});
+<script>
+var nav=document.getElementById('mainNav'),hero=document.getElementById('hero'),floatCta=document.getElementById('floatCta');
+window.addEventListener('scroll',function(){nav.style.boxShadow=window.scrollY>40?'0 4px 20px rgba(0,0,0,.12)':'0 2px 12px rgba(0,0,0,.08)';floatCta.className=hero.getBoundingClientRect().bottom<0?'float-cta vis':'float-cta';},{passive:true});
+var ham=document.getElementById('hamburger'),drawer=document.getElementById('drawer'),dclose=document.getElementById('drawerClose');
+ham.addEventListener('click',function(){drawer.classList.add('open');document.body.style.overflow='hidden';var sp=ham.querySelectorAll('span');sp[0].style.transform='rotate(45deg) translate(5px,5px)';sp[1].style.opacity='0';sp[2].style.transform='rotate(-45deg) translate(5px,-5px)';});
 dclose.addEventListener('click',closeDrawer);
-function closeDrawer(){drawer.classList.remove('open');document.body.style.overflow='';ham.querySelectorAll('span').forEach(s=>{s.style.transform='';s.style.opacity='';});}
-const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');io.unobserve(e.target);}});},{threshold:.08,rootMargin:'0px 0px -30px 0px'});
-document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-function handleForm(e,form,successId){
-  e.preventDefault();
-  const btn=form.querySelector('button[type="submit"]');
-  const orig=btn.innerHTML;
-  btn.innerHTML='Sending...';btn.disabled=true;
-  se
+function closeDrawer(){drawer.classList.remove('open');document.body.style.overflow='';ham.querySelectorAll('span').forEach(function(s){s.style.transform='';s.style.opacity='';});}
+function handleForm(e,form,sid){e.preventDefault();var btn=form.querySelector('button[type="submit"]'),orig=btn.innerHTML;btn.innerHTML='Sending...';btn.disabled=true;setTimeout(function(){btn.innerHTML='Sent! We\'ll be in touch same day.';btn.style.background='var(--green-dk)';var s=document.getElementById(sid);if(s)s.style.display='block';form.reset();setTimeout(function(){btn.innerHTML=orig;btn.style.background='';btn.disabled=false;if(s)s.style.display='none';},5000);},1100);}
+</script>
+</body>
+</html>
